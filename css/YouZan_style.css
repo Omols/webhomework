@@ -12,11 +12,12 @@ html,body{
 
 }
 
-.header .header-container li.last_logo_common{
+
+.header .header-container .last_logo_common{
     padding: 0px 0px 0px 10px;
 }
 
-.header .header-container li.last_register_common{
+.header .header-container .last_register_common{
     padding: 0px 0px 0px 10px;
 }
 
@@ -252,8 +253,21 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
 }
 
 
+
+.banner-container .pic-container .bgpic .bgpic-text{
+    position: absolute;
+    width: 1100px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
 .banner-container{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height:420px;
 }
 
@@ -269,16 +283,6 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
     box-sizing: content-box;
 }
 
-.pic-container .bgpic-text{
-    position: absolute;
-    width: 1100px;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
 
 .pic-container .bgpic{
     position: absolute;
@@ -313,4 +317,149 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
 
 .bgpic-text{
   margin:80px 0px 0px 250px
+}
+
+.header .header-container .btn-login:hover{
+    background-color: #2b90ed;
+    color: #fff;
+}
+
+a.pink-button{
+    color: #eb737f;
+}
+
+a.pink-button{
+    background-color: #fff;
+    padding: 12px 42px;
+    font-size: 14px;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.pic-container .bgpic-text h3{
+    color: #fff;
+}
+
+.banner-container .pic-container .bgpic-text{
+    margin-left: 300px;
+}
+
+.main-container{
+    height: 620px;
+}
+
+.main-container .main-container-thing{
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    zoom: 1;
+}
+
+.main-container .main-container-thing h3{
+    font-family: PingFangSC-Medium;
+    font-size: 28px;
+    color: #333;
+    letter-spacing: 0;
+}
+
+.main-container .main-container-thing h3{
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    line-height: 40px;
+    padding-top: 90px;
+}
+
+.main-container .main-container-thing .main-container-dx{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 70px;
+}
+
+.main-container .main-container-thing .main-container-dx .dx-left{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.main-container .main-container-thing .main-container-dx .dx-left .dx-card{
+    margin-bottom: 28px;
+}
+
+.main-container .main-container-thing .main-container-dx .dx-left .dx-card .dx-cardtitle{
+    color: #333;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: PingFangSC-Medium;
+    letter-spacing: 0;
+}
+
+
+
+.main-container .main-container-thing .main-container-dx .dx-left .dx-card .dx-cardmain{
+    margin-top: 5px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #999;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.b{
+    margin-right: 15px;
+}
+
+.main-container a.b{
+    background-color: #38f;
+    color: #fff;
+}
+
+.main-container a.button{
+    font-size: 14px;
+    padding: 10px 42px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+a.button{
+    text-decoration: none;
+}
+
+.b-outline{
+    margin-left: 15px;
+}
+
+.main-container a.b-outline{
+    border: 1px solid #38f;
+    color: #38f;
+    padding: 9px 42px;
+}
+
+.main-container a.button{
+    font-size: 14px;
+    padding: 10px 42px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.main-container .main-container-thing .main-container-dx .dx-right{
+    width: 615px;
 }
