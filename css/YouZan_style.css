@@ -12,15 +12,6 @@ html,body{
 
 }
 
-
-.header .header-container .last_logo_common{
-    padding: 0px 0px 0px 10px;
-}
-
-.header .header-container .last_register_common{
-    padding: 0px 0px 0px 10px;
-}
-
 .header .header-container .btn-login{
     width: 80px;
     height: 30px;
@@ -87,12 +78,6 @@ ul {
     transition: all 0.5s ease-in
 }
 
-@media(max-width:1100px){
-    .header{
-        min-width: 1000px;
-    }
-}
-
 .header a{
     text-decoration: none;
 }
@@ -139,13 +124,6 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
     zoom: 1;
 }
 
-
-@media(max-width:1100px){
-    .header{
-        min-width: 1000px;
-    }
-}
-
 .header .header-container:after{
     display: tabel;
     clear: both;
@@ -160,15 +138,10 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
     background-image:url("https://img.yzcdn.cn/public_files/2016/11/29/8fc4cd6f771897cbf9663166a63a5302.png");
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
-    .phptpl-header .header-container .logo {
-      background-image: url("https://img.yzcdn.cn/public_files/2016/11/29/e585d313de3013698ad95968e2456240.png"); } 
-}
-
 .header .header-container .nav-link-container{
     display: inline-block;
     width: 60px;
-    margin-left: 10px;
+    margin-left: 6px;
     margin-bottom: -1px;
 }
 
@@ -198,12 +171,6 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
     height: 70px;
     line-height: 70px;
     padding: 0px 20px;
-}
-
-@media (feColorMatrix){
-    .header .header-container .nav-link >li{
-        padding: 0px 20px;
-    }
 }
 
 .header .header-container .nav-list > li .product-center{
@@ -264,6 +231,21 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
     bottom: 0;
     margin: auto;
 }
+/* 
+.zong-container{
+    width: 100%;
+    height: 100%;
+}
+
+.zong-container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+ */
 
 
 .banner-container{
@@ -272,6 +254,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
 }
 
 .bgpic{
+    z-index: 1;
     background-image: url("http://img.yzcdn.cn/intro/img/banner3/3x.png");
 }
 
@@ -312,7 +295,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
 .pic-container .bgpic-text p{
   font-size: 20px;
   color: #fff;
-  margin-bottom: 55px;
+  margin-bottom: 5px;
 }
 
 .bgpic-text{
@@ -332,7 +315,6 @@ a.pink-button{
     background-color: #fff;
     padding: 12px 42px;
     font-size: 14px;
-    padding: 12px 22px;
     text-decoration: none;
     border-radius: 2px;
 }
@@ -342,7 +324,53 @@ a.pink-button{
 }
 
 .banner-container .pic-container .bgpic-text{
-    margin-left: 300px;
+    margin-left: 210px;
+}
+
+
+/* .zong-container .pic-button{
+    visibility: hidden;
+} */
+.banner-container .pic-button{
+    width: 1100px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.banner-container .button-left{
+    z-index: 100;
+    right: 1130px;
+    left: auto;
+    width: 60px;
+    height: 60px;
+    background-size: 100% 100%;
+    background-image: url(https://img.yzcdn.cn/static/intro/img/newIndex/L.png);
+}
+
+.button-left .button-right{
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 27px 44px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.banner-container .button-right{
+    left: 1130px;
+    right: auto;
+    width: 60px;
+    height: 60px;
+    background-size: 100% 100%;
+    background-image: url(https://img.yzcdn.cn/static/intro/img/newIndex/R.png);
 }
 
 .main-container{
@@ -462,4 +490,20 @@ a.button{
 
 .main-container .main-container-thing .main-container-dx .dx-right{
     width: 615px;
+}
+
+.last_login_common{
+    padding: 0px 0px 0px 20px !important;
+    float: left;
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+}
+
+.last_register_common{
+    padding: 0px 0px 0px 10px !important;
+    float: left;
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
 }
