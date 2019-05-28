@@ -1,0 +1,39 @@
+.img-container{
+    width: 33.3%;
+    height: 300px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding-left: 20px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+#case1-img{
+    background-image: url("../images/case1.jpg")
+}
+
+.img-container .bg-img{
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.img-container .card{
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    top: 150px;
+    padding-right: 20px;
+    background-color: #fff;
+    transition: all .2s linear;
+}
+.case:hover>.card{
+    top:0;
+}

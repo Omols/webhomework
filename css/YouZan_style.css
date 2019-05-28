@@ -55,6 +55,7 @@ body{
 li {
     text-align: -webkit-match-parent;
 }
+
 ul {
     /* width: 774px; */
     display: block;
@@ -104,6 +105,8 @@ a{
     vertical-align: baseline;
 }
 
+
+
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     margin: 0;
     padding: 0;
@@ -124,6 +127,37 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
     zoom: 1;
 }
 
+.header .header-container .caret{
+    position: relative;
+    display: inline-block;
+}
+
+.header .header-container .caret{
+    height:10px;
+    width: 10px;
+}
+
+#youzanyun{
+    margin-right: 2px;
+}
+
+#shangjia_FuWu{
+    margin-right: 2px;
+}
+
+#xiaofei{
+    margin-right: 2px;
+}
+
+#fuwu{
+    margin-right: 2px;
+}
+
+.header .header-container .caret::after{
+   content: url(../images/down.png);
+
+}
+
 .header .header-container:after{
     display: tabel;
     clear: both;
@@ -135,7 +169,8 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
     height: 25px;
     margin-top: 22.5px;
     background-size: 72px 25px;
-    background-image:url("https://img.yzcdn.cn/public_files/2016/11/29/8fc4cd6f771897cbf9663166a63a5302.png");
+    /* background-image:url("https://img.yzcdn.cn/public_files/2016/11/29/8fc4cd6f771897cbf9663166a63a5302.png"); */
+    background-image: url("../images/logo.png");
 }
 
 .header .header-container .nav-link-container{
@@ -144,6 +179,8 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
     margin-left: 6px;
     margin-bottom: -1px;
 }
+
+
 
 .header .header-container .nav-link-container .nav-link{
     float: left;
@@ -231,21 +268,6 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
     bottom: 0;
     margin: auto;
 }
-/* 
-.zong-container{
-    width: 100%;
-    height: 100%;
-}
-
-.zong-container{
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
- */
 
 
 .banner-container{
@@ -254,8 +276,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
 }
 
 .bgpic{
-    z-index: 1;
-    background-image: url("http://img.yzcdn.cn/intro/img/banner3/3x.png");
+    background-image: url("../images/bg.png");
 }
 
 .pic-container{
@@ -264,6 +285,17 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
     height: 100%;
     z-index: 1;
     box-sizing: content-box;
+}
+
+#pic_button{
+  width: 1100px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 
@@ -324,13 +356,23 @@ a.pink-button{
 }
 
 .banner-container .pic-container .bgpic-text{
-    margin-left: 210px;
+    margin-left: 245px;
 }
 
 
-/* .zong-container .pic-button{
-    visibility: hidden;
-} */
+#pic_button>div{
+  display: none;
+}
+
+#pic_button:hover>div{
+  display: block;
+}
+
+.main-container{
+    height: 620px;
+}
+
+
 .banner-container .pic-button{
     width: 1100px;
     height: 100%;
@@ -340,6 +382,33 @@ a.pink-button{
     left: 0;
     margin: auto;
 }
+
+.button-left{
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  height: 44px;
+  margin-top: -22px;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 27px 44px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.button-right{
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  height: 44px;
+  margin-top: -22px;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 27px 44px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
 
 .banner-container .button-left{
     z-index: 100;
@@ -351,19 +420,6 @@ a.pink-button{
     background-image: url(https://img.yzcdn.cn/static/intro/img/newIndex/L.png);
 }
 
-.button-left .button-right{
-    position: absolute;
-    top: 50%;
-    width: 27px;
-    height: 44px;
-    margin-top: -22px;
-    z-index: 10;
-    cursor: pointer;
-    background-size: 27px 44px;
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-
 .banner-container .button-right{
     left: 1130px;
     right: auto;
@@ -373,9 +429,6 @@ a.pink-button{
     background-image: url(https://img.yzcdn.cn/static/intro/img/newIndex/R.png);
 }
 
-.main-container{
-    height: 620px;
-}
 
 .main-container .main-container-thing{
     max-width: 1100px;
@@ -419,12 +472,6 @@ a.pink-button{
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -moz-box-orient: vertical;
-    -moz-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -506,4 +553,85 @@ a.button{
     display: inline-block;
     height: 70px;
     line-height: 70px;
+}
+
+.main-container .main-container-thing .main2{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-box-direction: reverse;
+}
+
+.main-container .main-container-thing .mian2 .dx-right{
+   width: 615px;
+}
+
+#main-dxleft{
+    margin-left: 72px;
+}
+
+#tu4{
+    width: 112%;
+    margin-left: -10%;
+}
+
+.HuaDongtu{
+    width: 100%;
+    background: #f8f8f8;
+    padding-bottom: 40px;
+}
+.HuaDongtu-title{
+    font-size: 28px;
+    color: #333;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto 60px;
+    padding-top: 90px;
+}
+
+.HuaDongtu-container{
+    width: 1120px;
+    margin: 0 auto 10px;
+}
+
+.HuaDongtu-container .case-container{
+    zoom: 1;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.HuaDongtu-container .case{
+    width: 33.3%;
+    height: 300px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding-left: 20px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+#case1-img{
+    background-image: url("../images/case1.jpg");
+}
+
+.case-container .case .bg-img{
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.HuaDongtu-container .case-container .card{
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    top: 150px;
+    padding-right: 20px;
+    background-color: #fff;
+    transition: all .2s linear;
+}
+
+.case:hover>.card{
+    top: 0px;
 }
